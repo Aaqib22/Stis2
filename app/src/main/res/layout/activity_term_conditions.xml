@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context="com.example.bluecodic.stis.Term_conditions">
+
+
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="TERM AND CONDITIONS"
+        android:textColor="#FFFFFF"
+        android:background="#48B7EA"
+        android:layout_alignParentEnd="true"
+
+        />
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView8"
+        android:text="He/She must be a part of this institution.
+He/She has registered their course in specific semester.
+Faculty member must has specific designation.
+This only provide consolidation academic service for teacher and student.
+Every teacher has their own counceling hours,student must havr to follow them.
+Every person have to follow the terms and conditions of STIS, otherwise in case of violation they will be suffer. "
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"
+        android:paddingStart="20dp"
+        android:lineSpacingExtra="2dp"
+        android:textAlignment="textStart"
+        android:paddingEnd="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/checkBox"
+        />
+
+
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:text="  I Agree to the STIS terms and conditions"
+        android:textSize="17dp"
+
+        tools:layout_editor_absoluteY="398dp"
+        tools:layout_editor_absoluteX="257dp"
+        android:layout_above="@+id/agree"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/agree"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="A G R E E"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/boundry_shape_text"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dp"
+        />
+
+
+
+
+</RelativeLayout>

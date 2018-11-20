@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context="com.example.bluecodic.stis.First">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/btn_tech_next"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="T e a c h e r   Login"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/choice_login"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:drawableLeft="@drawable/techr"
+        />
+
+    <Button
+        android:id="@+id/btn_std_next"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="S t u d e n t   Login"
+        android:background="@drawable/choice_login"
+        android:layout_below="@+id/btn_tech_next"
+        android:layout_alignStart="@+id/btn_tech_next"
+        android:layout_marginTop="22dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:drawableLeft="@drawable/std"
+        />
+
+    <TextView
+        android:id="@+id/term_cond"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/btn_std_next"
+        android:layout_below="@+id/btn_std_next"
+        android:layout_marginTop="19dp"
+        android:background="#FFFFFF"
+        android:text="TERMS AND CONDITIONS"
+        android:textAlignment="center"
+        android:textColor="#48B7EA"
+        android:textSize="15dp"
+
+        />
+
+
+</RelativeLayout>

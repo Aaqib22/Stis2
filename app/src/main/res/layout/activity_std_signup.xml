@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.bluecodic.stis.std_signup">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:text="S I G N U P"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="#48B7EA"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/f_name_std_up"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:layout_marginTop="30dp"
+        android:inputType="textPersonName"
+        android:hint="  First Name"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="29dp" />
+
+    <EditText
+        android:id="@+id/l_name_std_up"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="  Second Name"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/f_name_std_up"
+        android:layout_alignStart="@+id/f_name_std_up" />
+
+    <EditText
+        android:id="@+id/email_std_up"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="  Email"
+        android:layout_marginTop="20dp"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/l_name_std_up"
+        android:layout_alignStart="@+id/l_name_std_up" />
+
+    <EditText
+        android:id="@+id/pass_std_up"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="  Password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/email_std_up"
+        android:layout_alignStart="@+id/email_std_up"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/std_signup"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="73dp"
+        android:background="#48B7EA"
+        android:text="S U B M I T"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/pass_std_up"
+        android:layout_alignEnd="@+id/pass_std_up" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="180dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="30dp"
+        android:textAlignment="textEnd"
+        android:textColor="#48B7EA"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="Already have an Account"
+        android:layout_below="@+id/std_signup"
+        android:layout_alignStart="@+id/std_signup" />
+
+    <TextView
+        android:id="@+id/sigin_bck_std"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_toEndOf="@+id/textView5"
+        android:text="SIGNIN!"
+        android:textColor="#2d07ea" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:drawableRight="@drawable/person_icon"
+        android:layout_alignTop="@+id/f_name_std_up"
+        android:layout_toStartOf="@+id/f_name_std_up" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:drawableRight="@drawable/person_icon"
+        android:layout_alignBottom="@+id/l_name_std_up"
+        android:layout_toStartOf="@+id/l_name_std_up"
+        android:layout_alignTop="@+id/l_name_std_up" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/email_std_up"
+        android:drawableRight="@drawable/emil"
+        android:layout_toStartOf="@+id/email_std_up"
+        android:layout_alignBottom="@+id/email_std_up" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/pass_std_up"
+        android:drawableRight="@drawable/pass_icon"
+        android:layout_toStartOf="@+id/pass_std_up"
+        android:layout_alignBottom="@+id/pass_std_up" />
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    tools:context="com.example.bluecodic.stis.teacher_login">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:text="T E A C H E R  LOGIN"
+        android:textColor="#48B7EA"
+        android:textSize="20dp"
+        android:layout_marginBottom="0dp"
+        android:fontFamily="serif-monospace"
+        android:textAlignment="center"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="0dp"
+        android:text="Hello there, Welcome Back"
+        android:textAlignment="textStart"
+        android:textSize="40dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="#48B7EA"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/tech_login"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:textSize="20dp"
+        android:inputType="textEmailAddress"
+        android:hint="   User Name"
+        android:textColor="#48B7EA"
+        android:layout_below="@+id/textView4"
+        android:drawableLeft="@drawable/login_techr"
+        android:layout_alignStart="@+id/tech_login_pass" />
+
+    <EditText
+        android:id="@+id/tech_login_pass"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:textColor="#48B7EA"
+        android:textSize="20dp"
+        android:hint="  Password"
+        android:drawableLeft="@drawable/lockk"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/tech_login"
+        android:ems="10"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/login_btn_techr"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="#48B7EA"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:text="L O G I N"
+        android:layout_below="@+id/tech_login_pass"
+        android:layout_alignStart="@+id/tech_login_pass" />
+
+    <TextView
+        android:id="@+id/texttexh"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/login_btn_techr"
+        android:layout_below="@+id/login_btn_techr"
+        android:layout_marginTop="23dp"
+        android:text="DONT HAVE AN ACCOUNT?"
+        android:textAlignment="textEnd"
+        android:textColor="#48B7EA"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/tech_sup"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_alignTop="@+id/texttexh"
+        android:layout_toEndOf="@+id/texttexh"
+        android:text="SIGNUP!"
+        android:textColor="#2d07ea"
+        android:textSize="15dp" />
+
+</RelativeLayout>
